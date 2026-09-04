@@ -9,4 +9,4 @@ RUN ./mvnw clean package -DskipTests
 
 EXPOSE 8080
 
-CMD ["sh", "-c", "java -Dserver.port=$PORT -jar target/*.jar"]
+CMD ["java", "-jar", "target/bro-nation-fitness-0.0.1-SNAPSHOT.jar"]
